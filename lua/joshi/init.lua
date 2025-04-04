@@ -22,6 +22,13 @@ require("gruvbox").setup({
     ["@comment"] = { fg = "#997f63" },
     CursorLine = { bg = "#1d1d1d" },
     Folded = { fg = "#df6000" },
+    SnacksPickerGitStatusUntracked = { fg = "#d06bdb" },
+    SnacksPickerGitStatusIgnored = { fg = "#797d7a" },
+    SnacksPickerGitStatusAdded = { fg = "#40fa6f" },
+    GitSignsAdd = { fg = "#40fa6f" },
+    GitSignsChange = { fg = "#faf440" },
+    GitSignsDelete = { fg = "#fa4140" },
+    GitSignsUntracket = { fg = "#b7e6d3" },
   },
   transparent_mode = true,
 })
