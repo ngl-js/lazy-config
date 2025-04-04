@@ -6,7 +6,6 @@ local M = {
   dependencies = {
     { "nvim-treesitter/nvim-treesitter-textobjects" },
     { "nvim-treesitter/playground" },
-    { "HiPhish/nvim-ts-rainbow2" },
   },
 }
 
