@@ -45,17 +45,11 @@ return {
           vim.keymap.set(mode, l, r, opts)
         end
         -- Actions
-        map("n", "<leader>hs", gitsigns.stage_hunk, { desc = "Add hunk to stage" })
-        map("n", "<leader>hr", gitsigns.reset_hunk, { desc = "Reset hunk" })
-        map("n", "<leader>hS", gitsigns.stage_buffer, { desc = "Add buffer to stage" })
-        map("n", "<leader>hR", gitsigns.reset_buffer, { desc = "Reset buffer" })
-        map("n", "<leader>hp", gitsigns.preview_hunk_inline, { desc = "Preview hunk" })
-
-        map("n", "<leader>hb", function()
-          gitsigns.blame_line({ full = true })
-        end, { desc = "Blame buffer" })
-
-        map("n", "<leader>hd", gitsigns.diffthis, { desc = "Get diffs" })
+        map("n", "<leader>ghr", gitsigns.reset_hunk, { desc = "Reset hunk" })
+        map("n", "<leader>ga", gitsigns.stage_buffer, { desc = "Add buffer to stage" })
+        map("n", "<leader>gr", gitsigns.reset_buffer, { desc = "Reset buffer" })
+        map("n", "<leader>ghp", gitsigns.preview_hunk_inline, { desc = "Preview hunk" })
+        map("n", "<leader>gi", gitsigns.toggle_current_line_blame, { desc = "Inline blame" })
       end,
     })
   end,
