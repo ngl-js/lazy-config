@@ -10,8 +10,9 @@ return {
         contrast = "", -- can be "hard", "soft" or empty string
         overrides = {
           Identifier = { fg = "#f3b354" },
+          Normal = { fg = "#d0AA06" },
           Function = { fg = "#e77f2a" },
-          Constant = { fg = "#c46602", bold = true, italic = true },
+          Constant = { fg = "#37b460", bold = true, italic = true, strikethrough = true, nocombine = true },
           String = { fg = "#e49e35", italic = false },
           Boolean = { fg = "#37c479", bold = true, link = nil, underline = true },
           Number = { fg = "#58b6ae" },
@@ -36,6 +37,10 @@ return {
           GitSignsChange = { fg = "#d2d640" },
           GitSignsDelete = { fg = "#d1121b" },
           GitSignsUntracket = { fg = "#b7e6d3" },
+          ["@property"] = { fg = "#e49a75", italic = true },
+          ["@attribute"] = { fg = "#e49a75", italic = true },
+          ["@variable.parameter"] = { fg = "#e49a75", italic = true },
+          ["@parameter"] = { fg = "#c2c227", italic = true, link = nil, underdotted = true },
         },
         transparent_mode = true,
       })
