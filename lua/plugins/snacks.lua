@@ -26,5 +26,13 @@ return {
                   [ngl-js] :3                   ]],
       },
     },
+    picker = {
+      sources = {
+        explorer = {
+          focus = "input",
+          auto_close = true,
+        },
+      },
+    },
   },
 }
