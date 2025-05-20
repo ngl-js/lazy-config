@@ -39,6 +39,7 @@ return {
         "ts_ls",
         "sqlls",
         "html",
+        "pylsp",
       },
       handlers = {
         function(server_name) -- default handler (optional)
@@ -91,6 +92,17 @@ return {
                 },
               },
             },
+          })
+        end,
+        ["pylsp"] = function()
+          local lspconfig = require("lspconfig")
+          lspconfig.pylsp.setup({
+            capabilities = capabilities,
+            cmd = { "pylsp" },
+            filetypes = {
+              "python",
+            },
+            root_markers = { "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git" },
           })
         end,
       },
