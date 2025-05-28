@@ -40,10 +40,17 @@ return {
         "sqlls",
         "html",
         "pylsp",
+        "angularls",
       },
       handlers = {
         function(server_name) -- default handler (optional)
           require("lspconfig")[server_name].setup({
+            capabilities = capabilities,
+          })
+        end,
+        ["angularls"] = function()
+          local lspconfig = require("lspconfig")
+          lspconfig.angularls.setup({
             capabilities = capabilities,
           })
         end,

@@ -29,7 +29,6 @@ return {
     picker = {
       sources = {
         explorer = {
-          focus = "input",
           auto_close = true,
         },
       },
