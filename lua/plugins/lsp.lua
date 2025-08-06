@@ -119,7 +119,7 @@ return {
     cmp.setup({
       completion = {
         completeopt = "menu,menuone,noselect",
-        keyword_length = 3,
+        keyword_length = 2,
       },
       snippet = {
         expand = function(args)
@@ -148,7 +148,7 @@ return {
           menu = {
             { name = "nvim_lsp", keyword_length = 1 },
             { name = "luasnip", keyword_length = 2 },
-            { name = "buffer", keyword_length = 3 },
+            { name = "buffer", keyword_length = 2 },
             { name = "path" },
           },
         }),
